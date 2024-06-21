@@ -1,67 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./sources/logo.png" type="image/x-icon">
-    <title>TubeBizzare</title>
-    <link rel="stylesheet" href="Youtube.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-    
-      <a href="index.html">
-        <img src="sources/logo.png" alt="logo" class="logo"
-      /></a>
 
-      <div class="search-box">
-        <input
-          type="text"
-          class="search-bar"
-          placeholder="&nbsp;&nbsp;Search"
-          id="inputBox"
-        />
-        <button id="searchbtn" onclick="search()" class="search-btn">
-          <img src="sources/search.png" alt="" />
-        </button>
-        
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./sources/mlog.png" type="image/x-icon">
+  <title>TubeBizzare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <div class="user-options">
-        <div class="user-dp">
-          <img
-            src="./sources/_aea0a63d-ef64-4137-a2c0-e3b1ea5902be.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    </nav>
+<body>
+  <nav class="navbar">
 
+    <a href="index.html">
+      <img src="sources/bt.png" alt="logo" class="logo" /></a>
 
-    <div class="side-bar">
-      <a href="index.html" class="links active"
-        ><img src="sources/home.png" alt="" />Home</a
-      >
-    </div>
-
-    
-    <div class="filters">
-      <button onclick="trending()" class="fliter-options active">All</button>
-      <button onclick="search()" class="fliter-options">Programming</button>
-      <button onclick="search()" class="fliter-options">Music</button>
-      <button onclick="trending()" class="fliter-options">
-        News
+    <div class="search-box">
+      <input type="text" class="search-bar" placeholder="&nbsp;&nbsp;Search" id="inputBox" />
+      <button id="searchbtn" onclick="search()" class="search-btn">
+        <img src="sources/search.png" alt="" />
       </button>
-      <button onclick="search()" class="fliter-options">Gaming</button>
-      <button onclick="search()" class="fliter-options">Flight simulator</button>
-      <button onclick="search()" class="fliter-options">Cockpits</button>
-      <button onclick="trending()" class="fliter-options">Comedy</button>
-      <button onclick="search()" class="fliter-options">Recently uploaded</button>
-      <button onclick="search()" class="fliter-options">Pop Music</button>
+
     </div>
 
-    <div id="videosResults"></div>
-  </body>
+    <div class="user-options">
+      <div class="user-dp">
+        <img src="./sources/_aea0a63d-ef64-4137-a2c0-e3b1ea5902be.jpg" alt="" />
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="side-bar">
+    <a href="index.html" class="links active"><img src="sources/home_.png" alt="" />Home</a>
+  </div>
+
+
+  <div class="filters">
+    <button onclick="trending()" class="fliter-options active">All</button>
+    <button onclick="search()" class="fliter-options">Programming</button>
+    <button onclick="search()" class="fliter-options">Music</button>
+    <button onclick="trending()" class="fliter-options">News</button>
+    <button onclick="search()" class="fliter-options">Gaming</button>
+    <button onclick="search()" class="fliter-options">Flight simulator</button>
+    <button onclick="search()" class="fliter-options">Cockpits</button>
+    <button onclick="trending()" class="fliter-options">Comedy</button>
+    <button onclick="search()" class="fliter-options">Pop Music</button>
+    <button onclick="search()" class="fliter-options">Recently uploaded</button>
+  </div>
+
+  <div id="videosResults"></div>
+</body>
+
 </html>
-<script src="Youtube.js"></script>
+<script src="index.js"></script>
