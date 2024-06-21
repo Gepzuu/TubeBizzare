@@ -30,9 +30,7 @@ async function search() {
     let inp = document.getElementById("inputBox").value;
     let div = document.getElementById("videosResults");
 
-
-    let API = "AIzaSyAEV-5nHL-oS7CtJBEfWllrG24-o0DPwn0";
-
+    let API = "AIzaSyA266SPutTfCO63sLArqnx8Xi-UR51PSus";
 
     div.innerHTML = "";
     let res = await fetch(
@@ -79,17 +77,16 @@ async function search() {
 
 
 
+
 async function trending() {
     let inp = document.getElementById("inputBox").value;
     let div = document.getElementById("videosResults");
     div.innerHTML = "";
 
-
-    let API = "AIzaSyAEV-5nHL-oS7CtJBEfWllrG24-o0DPwn0";
-
+    let API = "AIzaSyA266SPutTfCO63sLArqnx8Xi-UR51PSus";
 
     let res = await fetch(
-        `https://youtube.googleapis.com/youtube/v3/search?q=${inp}&part=snippet&maxResults=25&key=${API}`
+        `https://www.googleapis.com/youtube/v3/videos?part=snippet&maxResults=24&chart=mostPopular&regionCode=PH&key=${API}`
     );
     let data = await res.json();
     console.log(data);
@@ -100,7 +97,6 @@ async function trending() {
         snippet: { title, channelTitle, thumbnails },
     } of data.items) {
         let channelThumbnail = thumbnails.medium.url;
-
 
         let channelThumbnailImg = document.createElement("img");
         channelThumbnailImg.src = channelThumbnail;
@@ -133,3 +129,4 @@ async function trending() {
 }
 
 trending();
+

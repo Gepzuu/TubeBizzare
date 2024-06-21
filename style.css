@@ -101,12 +101,12 @@
     position: fixed;
     top: 60px;
     left: 0;
-    min-width: 250px;
-    width: 250px;
+    width: 250px; 
     padding-right: 10px;
     background: whitesmoke;
     height: calc(100vh - 60px);
-  }
+}
+
 
   .links {
     color: #252424;
@@ -183,14 +183,18 @@
   }
 
 
-
-  #hoverDiv:hover{
+  #hoverDiv {
     background-color: white;
+    cursor: pointer;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transform: scale(1);
+    transition: transform 0.3s ease; 
+}
+
+#hoverDiv:hover {
     transform: scale(1.1);
-    cursor: pointer;
-  }
+}
 
 
 
@@ -282,6 +286,7 @@ background-color: whitesmoke;
   @media only screen and (max-width: 375px) {
     .search-bar {
       width: 100%;
+      
     }
   
     .search-box {
@@ -290,10 +295,16 @@ background-color: whitesmoke;
     }
   
     .filters {
+
+      position: absolute; 
+      z-index: 1000;
+      top: -55px; 
       left: 0;
       width: 100%;
       padding: 0 10px;
       overflow-x: auto;
+      overflow-y: hidden;
+      box-sizing: border-box;
     }
   
     #videosResults {
@@ -301,7 +312,7 @@ background-color: whitesmoke;
       margin-left: 0;
       grid-template-columns: repeat(1, 1fr);
       padding: 10px;
-      margin-top: 80px;
+      margin-top: 100px;
     }
   
     .user-dp {
