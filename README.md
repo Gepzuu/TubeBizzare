@@ -17,3 +17,7 @@ Utilizes YouTube Data API v3 for fetching video data
 # Credits:
 This project is inspired by YouTube, and credits go to YouTube for the inspiration behind the design and functionality.
 [YouTube.com](https://www.youtube.com/)
+
+<div align="center">
+**Note:** The API key used in this project is free.
+</div>
