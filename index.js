@@ -89,7 +89,7 @@ async function trending() {
 
 
     let res = await fetch(
-        `https://www.googleapis.com/youtube/v3/videos?part=snippet&maxResults=24&chart=mostPopular&regionCode=IN&key=${API}`
+        `https://youtube.googleapis.com/youtube/v3/search?q=${inp}&part=snippet&maxResults=25&key=${API}`
     );
     let data = await res.json();
     console.log(data);
