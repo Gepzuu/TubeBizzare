@@ -31,7 +31,7 @@ async function search() {
     let div = document.getElementById("videosResults");
 
 
-    let API = "AIzaSyA266SPutTfCO63sLArqnx8Xi-UR51PSus";
+    let API = "AIzaSyAEV-5nHL-oS7CtJBEfWllrG24-o0DPwn0";
 
 
     div.innerHTML = "";
@@ -85,7 +85,7 @@ async function trending() {
     div.innerHTML = "";
 
 
-    let API = "AIzaSyA266SPutTfCO63sLArqnx8Xi-UR51PSus";
+    let API = "AIzaSyAEV-5nHL-oS7CtJBEfWllrG24-o0DPwn0";
 
 
     let res = await fetch(
